@@ -12,39 +12,47 @@ void FillArray(int[] collection)
     int index = 0;
     while (index < Length)
     {
-        collection[index] = new Random ().Next(1,10);
+        collection[index] = new Random().Next(1, 10);
         index++;
     }
 }
-void PrintArray (int[] col)
+void PrintArray(int[] col)
 {
-int count = col.Length;
-int position = 0;
-while (position < count)
-{
-    Console.WriteLine( col[position]);
-    position++;
-}
-
-int IndexOf(int[] collection, int find)
-{
-    int count = collection.Length;
-    int index = 0;
-    int position = -1;
-    while (index <count)
+    int count = col.Length;
+    int position = 0;
+    while (position < count)
     {
-        if (collection[index] == find)
-        {
-            position=index;
-        
-        }
-        index++;
+        Console.WriteLine(col[position]);
+        position++;
     }
-    return position;
+}
+int IndexOf(int[] collection)
+
+{
+    for (int i = 0; i < collection.Length; i++)
+    {
+        int count = 0;
+        if (collection[i] > 8)
+        {
+            count++;
+        }
+    }
+}
+void ReplaceDigits(int[] collection, int[] newColletion)
+
+{
+    for (int i = 0; i < collection.Length; i++)
+    {
+        int count = 0;
+        if (collection[i] > 8)
+        {
+            collection[i]=collection[j];
+        }
+    }
 }
 
-int [] array = new int[25];
+    int[] array = new int[25];
 FillArray(array);
 PrintArray(array);
-int find =8;
-IndexOf(array);
+int[] newArray = new int[IndexOf(array)];
+PrintArray(array);
